@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3 — Вертикальное раскрывающееся меню</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            padding: 20px;
+        }
+
+        .nav {
+            width: 250px;
+            background: linear-gradient(to bottom, #cccccc, #999999);
+            border-radius: 4px;
+            box-shadow: 5px 3px rgb(146, 145, 145);
+        }
+
+        .nav .pt {
+            background: linear-gradient(to bottom, #c8c8c8, #bbbbbb);
+            text-decoration: none;
+            font-size: 20px;
+            text-align: center;
+            display: block;
+            border-bottom: 1px solid #7c7a7a;
+            border-radius: 4px;
+            padding: 15px 20px;
+            color: black;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .nav .pt:hover,
+        .nav .item:hover > .pt {
+            background: linear-gradient(to bottom, #c8c4c4, #8c8c8c);
+        }
+
+        .nav .item {
+            display: block;
+            text-align: center;
+        }
+
+        .nav .item .drop {
+            display: none;
+        }
+
+        .drop_item {
+            text-decoration: none;
+            display: block;
+            background: linear-gradient(to bottom, #e6e4e4, #f8f7f7);
+            color: black;
+            border-bottom: 1px solid #d0d0d0;
+            border-radius: 4px;
+            padding: 14px 20px;
+            font-size: 20px;
+        }
+
+        .drop_item:hover {
+            background: linear-gradient(to bottom, #c7c7c7, #a5a4a4);
+        }
+
+        .nav .item:hover .drop {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="item">
+            <a class="pt" href="#">Главная</a>
+            <div class="drop">
+                <a class="drop_item" href="#">Главная страница</a>
+                <a class="drop_item" href="#">Контакты</a>
+                <a class="drop_item" href="#">О Нас</a>
+            </div>
+        </div>
+
+        <a class="pt" href="#">Отделы<br>продаж</a>
+
+        <div class="item">
+            <a class="pt" href="#">Поставщики</a>
+            <div class="drop">
+                <a class="drop_item" href="#">ООО "Дизайн"</a>
+                <a class="drop_item" href="#">ООО "Арт"</a>
+                <a class="drop_item" href="#">ООО "Фотостиль"</a>
+            </div>
+        </div>
+
+        <a class="pt" href="#">Наши услуги</a>
+        <a class="pt" href="#">Контакты</a>
+        <a class="pt" href="#">О нас</a>
+    </div>
+
+</body>
+</html>

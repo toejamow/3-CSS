@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructional Design — Лабораторная работа №3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 10px;
+            font-family: "Times New Roman", Times, serif;
+            background-color: #ffffff;
+        }
+
+        .header {
+            background: linear-gradient(to bottom, #e3eff9, #9dc3e9);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 54px;
+            font-style: italic;
+            color: red;
+            padding: 15px 10px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .nav {
+            background: linear-gradient(to bottom, #e3eff9, #9dc3e9);
+            border-radius: 6px;
+            height: 48px;
+            box-shadow: 3px 3px 4px #888888;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+
+        .nav a {
+            display: block;
+            float: left;
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 13px 28px;
+            background: linear-gradient(to bottom, #e3eff9, #9dc3e9);
+            border-right: 2px solid #6b9bc3;
+            border-bottom: 2px solid #6b9bc3;
+            border-radius: 5px;
+            margin-right: 3px;
+        }
+
+        .nav a:hover {
+            background: linear-gradient(to bottom, #cde6ff, #8ec3ff);
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .left-col {
+            float: left;
+            width: 190px;
+            background: linear-gradient(to bottom, #e3eff9, #9dc3e9);
+            border-radius: 6px;
+            padding: 12px;
+            box-shadow: 3px 3px 4px #777777;
+        }
+
+        .right-col {
+            float: right;
+            width: 210px;
+            background: linear-gradient(to bottom, #e3eff9, #9dc3e9);
+            border-radius: 6px;
+            padding: 10px;
+            box-shadow: 3px 3px 4px #777777;
+        }
+
+        .center-col {
+            overflow: hidden;
+            margin: 0 225px 0 205px;
+            background: linear-gradient(to bottom, #e3eff9, #9dc3e9);
+            border-radius: 6px;
+            padding: 25px;
+            min-height: 360px;
+            box-shadow: 3px 3px 4px #777777;
+        }
+
+        .side-card {
+            background-color: #e6f2ff;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 2px 2px 4px #666666;
+            margin-bottom: 12px;
+            font-size: 16px;
+            line-height: 1.25;
+            text-align: justify;
+        }
+
+        .side-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .side-title {
+            background-color: #72c2f1;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 6px;
+            padding: 3px 0;
+            margin-bottom: 8px;
+        }
+
+        .side-card ul {
+            margin: 6px 0 0 0;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .base {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: 145px;
+            height: 145px;
+            margin: 10px 12px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 3px 3px 6px #666666;
+            overflow: hidden;
+        }
+
+        .base img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .layer {
+            position: absolute;
+            bottom: 15px;
+            left: -100%;
+            width: 100%;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            text-decoration: none;
+            font-family: "Times New Roman", serif;
+            font-size: 22px;
+            color: #1a2a3a;
+            background-color: rgba(120, 145, 165, 0.78);
+            transition: left 0.3s ease;
+        }
+
+        .base:hover .layer {
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">INSTRUCTIONAL DESIGN</div>
+
+    <div class="nav">
+        <a href="#">Главная</a>
+        <a href="#">Отделы продаж</a>
+        <a href="#">Поставщики</a>
+        <a href="#">Контакты</a>
+        <a href="#">О нас</a>
+    </div>
+
+    <div class="container">
+        <div class="left-col">
+            <div class="side-card">
+                <div class="side-title">Новости</div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste accusamus rerum omnis
+                adipisci corporis est possimus dolor sit vero, cumque incidunt exercitationem quibusdam
+                reprehenderit harum asperiores. Qui natus voluptatum optio
+            </div>
+        </div>
+
+        <div class="right-col">
+            <div class="side-card" style="text-align: left;">
+                <div class="side-title">Контакты</div>
+                <b>Адрес:</b> г. Москва, ул. Академика Королева 12<br>
+                <b>Телефон:</b> 8-999-999-99-99
+            </div>
+            <div class="side-card">
+                <div class="side-title">Услуги</div>
+                <ul>
+                    <li>Разработка дизайна</li>
+                    <li>Разработка web-приложений</li>
+                    <li>Разработка web-сервисов</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="center-col">
+            <div class="base">
+                <img src="img/t.png" alt="Tumblr">
+                <a href="#" class="layer">Tumblr</a>
+            </div>
+
+            <div class="base">
+                <img src="img/tel.webp" alt="Telegram">
+                <a href="#" class="layer">Telegram</a>
+            </div>
+
+            <div class="base">
+                <img src="img/x.webp" alt="X">
+                <a href="#" class="layer">X</a>
+            </div>
+
+            <div class="base">
+                <img src="img/p.webp"
+                    alt="Pinterest">
+                <a href="#" class="layer">Pinterest</a>
+            </div>
+
+            <div class="base">
+                <img src="img/tel.webp" alt="Telegram">
+                <a href="#" class="layer">Telegram</a>
+            </div>
+
+            <div class="base">
+                <img src="img/tel.webp" alt="Telegram">
+                <a href="#" class="layer">Telegram</a>
+            </div>
+
+            <div class="base">
+                <img src="img/x.webp" alt="X">
+                <a href="#" class="layer">X</a>
+            </div>
+
+            <div class="base">
+                <img src="img/t.png" alt="Tumblr">
+                <a href="#" class="layer">Tumblr</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
